@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css"
+    integrity="sha384-7ynz3n3tAGNUYFZD3cWe5PDcE36xj85vyFkawcF6tIwxvIecqKvfwLiaFdizhPpN" crossorigin="anonymous">
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Phụ Kiện - Rum Apple</title>
+</head>
+<body style="background-color: white;">
+    <header>
+        <div class="container">
+            <ul>
+                <li><a href="index.html"><img style="width: 15%;" src="img/Logo.png" alt=""></a></li>
+                <li><a href="index.html">RUM APPLE</a></li>
+                <li><input type="text" placeholder="Bạn tìm gì..."><i class="fas fa-search"></i></li>
+                <li><a href=""></a><button id="popup_card"><i class="fa fa-shopping-cart"></i>Giỏ hàng</button></li>
+                <li><a href=""><span class="btn-content"><span class="btn"></span></span> Đặt trước iphone 13 ngay hôm
+                        nay</a></li>
+                <li><a href=""><i class="fas fa-database"></i>24H CÔNG NGHỆ</a></li>
+                <li><a href=""><i class="fas fa-mobile"></i>TRA CỨU BẢO HÀNH</a></li>
+            </ul>
+            <!-- Start Giỏ hàng -->
+            <div class="overlay"></div>
+            <div class="popup_shopping">
+                <div class="body_shopping">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>STT</th>
+                                <th>Tên sản phẩm</th>
+                                <th>Giá</th>
+                                <th>Số lượng</th>
+                                <th>Hành động</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>iPhone 11 Pro</td>
+                                <td>15.000.000 <sup>đ</sup></td>
+                                <td>1</td>
+                                <td>
+                                    <a href="">Delete</a>
+                                    <a href="">Add</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>iPhone 12</td>
+                                <td>19.000.000 <sup>đ</sup></td>
+                                <td>2</td>
+                                <td>
+                                    <a href="">Delete</a>
+                                    <a href="">Add</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>iPhone 13 Pro Max</td>
+                                <td>29.000.000 <sup>đ</sup></td>
+                                <td>1</td>
+                                <td>
+                                    <a href="">Delete</a>
+                                    <a href="">Add</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="close">
+                        <button type="button" class="button">Close</button>
+                    </div>
+                </div>
+            </div>
+            <!-- End Giỏ hàng -->
+        </div>
+    </header>
+    <section style="margin: 0;" class="menu-bar">
+        <div class="container">
+            <div class="menu-bar-content">
+                <ul>
+                    <li><a href="iPhone.html"><i class="fas fa-mobile"></i>iPhone</a></li>
+                    <li><a href="iPad.html"><i class="fas fa-tablet-alt"></i>iPad</a></li>
+                    <li><a href="AppleWatch.html"><i class="bi bi-smartwatch"></i>Apple Watch</a></li>
+                    <li><a href="MacBook.html"><i class="fas fa-laptop"></i>MacBook</a></li>
+                    <li><a href="PhuKien.html"><i class="fas fa-headphones"></i>Phụ kiện</a></li>
+                    <li><a href="SuaChua.html"><i class='fas fa-tools'></i>Sửa chữa</a></li>
+                    <li><a href="MayCuGiaRe.html"><i class="fas fa-mobile"></i>Máy cũ giá rẻ</a></li>
+                    <li><a href="TraGop.html"><i class="fas fa-box-open"></i>Trả góp</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="grid wide">
+            <div style="margin: 0;" class="row">
+                <div class="product-watch-top">
+                    <h2>Phụ kiện</h2>
+                </div>
+                <!-- <div class="col l-3">
+                    <a href=""><img src="img/apple-watch3.jpg" alt=""></a>
+                    <li>Trả góp 0%</li>
+                    <a href="">
+                        <li>Apple Watch SE 40mm</li>
+                    </a>
+                    <li>6.990.000 <sup>đ</sup></li>
+                    <li>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </li>
+                    <span class="xe1"></span>
+                </div>
+                <div class="col l-3">
+                    <a href=""><img src="img/apple-watch3.jpg" alt=""></a>
+                    <li>Trả góp 0%</li>
+                    <a href="">
+                        <li>Apple Watch SE 40mm</li>
+                    </a>
+                    <li>6.990.000 <sup>đ</sup></li>
+                    <li>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </li>
+                    <span class="xe1"></span>
+                </div>
+                <div class="col l-3">
+                    <a href=""><img src="img/apple-watch2.jpg" alt=""></a>
+                    <li>Trả góp 0%</li>
+                    <a href="">
+                        <li>Apple Watch SE 40mm</li>
+                    </a>
+                    <li>6.990.000 <sup>đ</sup></li>
+                    <li>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </li>
+                    <span class="xe1"></span>
+                </div>
+                <div class="col l-3">
+                    <a href=""><img src="img/apple-watch.jpg" alt=""></a>
+                    <li>Trả góp 0%</li>
+                    <a href="">
+                        <li>Apple Watch SE 40mm</li>
+                    </a>
+                    <li>6.990.000 <sup>đ</sup></li>
+                    <li>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </li>
+                    <span class="xe1"></span>
+                </div> -->
+                <div class="no-product">
+                    <p>Không tìm thấy sản phẩm nào khớp với lựa chọn của bạn.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="margin: 0;" class="icon-title-container-content">
+        <div class="grid wide">
+            <div style="margin: 0;" class="row icon-title-container">
+                <div class="icon-title">
+                    <img src="img/icon-van-chuyen.png" alt="">
+                    <p>Giao hàng nhanh chóng</p>
+                </div>
+                <div class="icon-title">
+                    <img src="img/icon-thanh-toan.png" alt="">
+                    <p>Thanh toán: tiền mặt, visa / master, trả góp</p>
+                </div>
+                <div class="icon-title">
+                    <img src="img/icon-trai-nghiem.png" alt="">
+                    <p>Trải nghiệm sản phẩm tại nhà</p>
+                </div>
+                <div class="icon-title">
+                    <img src="img/icon-bao-hanh.png" alt="">
+                    <p>Bảo hành đổi trả trong 7 ngày</p>
+                </div>
+                <div class="icon-title">
+                    <img src="img/icon-ho-tro.png" alt="">
+                    <p>
+                        Hỗ trợ suốt thời gian sử dụng. <br>
+                        Hotline: 0966.923.416
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="grid wide">
+            <div style="margin: 0;" class="row">
+                <div class="col l-4 footer">
+                    <ul>
+                        <li><a href="">Lịch sử mua hàng</a></li>
+                        <li><a href="">Tìm hiểu về mua trả góp</a></li>
+                        <li><a href="">Chính sách bảo hành</a></li>
+                        <li><a href="">Chính sách đổi trả</a></li>
+                        <li><a href="">Giao hàng & thanh toán</a></li>
+                        <li><a href="">Chính sách ship COD</a></li>
+                        <li><a href="">Chính sách bảo mật thông tin</a></li>
+                    </ul>
+                </div>
+                <div class="col l-4 footer">
+                    <ul>
+                        <li><a href="">Giới thiệu công ty</a></li>
+                        <li><a href="">Tin công nghệ</a></li>
+                        <li><a href="">Tuyển dụng</a></li>
+                        <li><a href="">Gửi góp ý, khiếu nại</a></li>
+                        <li><a href="">Bệnh viện điện thoại quảng nam</a></li>
+                    </ul>
+                </div>
+                <div class="col l-4 footer">
+                    <ul>
+                        <li>Gọi mua hàng <a href=""><b>0966.923.416</b></a></li>
+                        <li>Gọi bảo hành <a href=""><b>0966.923.416</b></a></li>
+                        <li>Kỹ thuật <a href=""><b>0966.923.416</b></a></li>
+                    </ul>
+                </div>
+                <div class="footer-title">
+                    <p>© 2021 Rum Apple. Điện thoại: 0966.923.416. Email: cskh@rumapple.vn. Chịu trách nhiệm nội dung:
+                        Huỳnh Văn Phòng.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="Cart.js"></script>
+</body>
+</html>

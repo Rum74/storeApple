@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css"
+        integrity="sha384-7ynz3n3tAGNUYFZD3cWe5PDcE36xj85vyFkawcF6tIwxvIecqKvfwLiaFdizhPpN" crossorigin="anonymous">
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Rum Apple</title>
+</head>
+
+<body>
+    <!-- Start Header -->
+    <header>
+        <div class="container">
+            <ul>
+                <li><a href=""><img style="width: 15%;" src="img/Logo.png" alt=""></a></li>
+                <li><a href="">RUM APPLE</a></li>
+                <li><input type="text" placeholder="Bạn tìm gì..."><i class="fas fa-search"></i></li>
+                <li><a href=""></a><button id="popup_card"><i class="fa fa-shopping-cart"></i>Giỏ hàng</button></li>
+                <li><a href=""><span class="btn-content"><span class="btn"></span></span> Đặt trước iphone 13 ngay hôm
+                        nay</a></li>
+                <li><a href=""><i class="fas fa-database"></i>24H CÔNG NGHỆ</a></li>
+                <li><a href=""><i class="fas fa-mobile"></i>TRA CỨU BẢO HÀNH</a></li>
+            </ul>
+
+            <!-- Start Giỏ hàng -->
+            <div class="overlay"></div>
+            <div class="popup_shopping">
+                <div class="body_shopping">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Tên sản phẩm</th>
+                                <th>Giá</th>
+                                <th>Số lượng</th>
+                                <th>Hành động</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- <tr>
+                                <td>iPhone 11 Pro</td>
+                                <td>15.000.000 <sup>đ</sup></td>
+                                <td><input type="number" value="1" min="0"></td>
+                                <td>
+                                    <a href="">Delete</a>
+                                    <a href="">Add</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>iPhone 12</td>
+                                <td>19.000.000 <sup>đ</sup></td>
+                                <td><input type="number" value="1" min="0"></td>
+                                <td>
+                                    <a href="">Delete</a>
+                                    <a href="">Add</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>iPhone 13 Pro Max</td>
+                                <td>29.000.000 <sup>đ</sup></td>
+                                <td><input type="number" value="1" min="0"></td>
+                                <td>
+                                    <a href="">Delete</a>
+                                    <a href="">Add</a>
+                                </td>
+                            </tr> -->
+                            <span style="position: absolute; bottom: 0; padding: 17px 0;">Tổng tiền: 0</span>
+                        </tbody>
+                    </table>
+                    <div class="close">
+                        <button type="button" class="button">Close</button>
+                    </div>
+                </div>
+            </div>
+            <!-- End Giỏ hàng -->
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Menu-Bar -->
+    <section class="menu-bar">
+        <div class="container">
+            <div class="menu-bar-content">
+                <ul>
+                    <li><a href="iPhone.html"><i class="fas fa-mobile"></i>iPhone</a></li>
+                    <li><a href="iPad.html"><i class="fas fa-tablet-alt"></i>iPad</a></li>
+                    <li><a href="AppleWatch.html"><i class="bi bi-smartwatch"></i>Apple Watch</a></li>
+                    <li><a href="MacBook.html"><i class="fas fa-laptop"></i>MacBook</a></li>
+                    <li><a href="PhuKien.html"><i class="fas fa-headphones"></i>Phụ kiện</a></li>
+                    <li><a href="SuaChua.html"><i class='fas fa-tools'></i>Sửa chữa</a></li>
+                    <li><a href="MayCuGiaRe.html"><i class="fas fa-mobile"></i>Máy cũ giá rẻ</a></li>
+                    <li><a href="TraGop.html"><i class="fas fa-box-open"></i>Trả góp</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- End Menu-Bar -->
+
+    <!-- Start Slider -->
+    <nav>
+        <div class="grid wide">
+            <div class="row">
+                <div class="col l-8">
+                    <div class="slider-content-lefl-top-container">
+                        <div class="slider-content-lefl-top">
+                            <a href=""><img src="img/banner1.png" alt=""></a>
+                            <a href=""><img src="img/banner2.png" alt=""></a>
+                            <a href=""><img src="img/banner3.png" alt=""></a>
+                        </div>
+                        <div class="Slider-btn">
+                            <i class="fas fa-angle-left"></i>
+                            <i class="fas fa-angle-right"></i>
+                        </div>
+                    </div>
+                    <div class="slider-content-lefl-bottom">
+                        <li class="actives">Mua iPhone 13 <br> Giảm đến 2 triệu</li>
+                        <li>Apple watch S6 <br> Giảm đến 1,5 triệu</li>
+                        <li>Mua phụ kiện <br> Ưu đãi đến 2 lần</li>
+                    </div>
+                </div>
+                <div class="col l-4">
+                    <div class="title">
+                        <h2>TIN CÔNG NGHỆ</h2>
+                    </div>
+                    <div class="slider-content-right-top">
+                        <img src="img/bannerRight1.jpg" alt="">
+                        <p>iPhone SE Plus sẽ trang bị chip A15 Bionic và trở thành đối thủ đáng gờm của Android</p>
+                    </div>
+                    <div class="slider-content-right-mid">
+                        <img src="img/bannerRight2.jpg" alt="">
+                        <p>Tin đồn: AirPods Pro 2 đang được Apple phát triển và rò rỉ ngày phát hành</p>
+                    </div>
+                    <div class="slider-content-right-bottom">
+                        <img src="img/bannerRight3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Start Slider -->
+     
+    <!-- Start Banner -->
+    <div class="grid wide">
+        <div class="banner">
+            <img src="img/Banner.jpg" alt="">
+            <img src="img/Banner1.jpg" alt="">
+        </div>
+    </div>
+    <!-- Start Banner -->
+
+    <!-- Start Product -->
+    <section>
+        <div class="grid wide">
+            <div class="product">
+                <div class="product-title">
+                    <h2>IPHONE 13 SERIES</h2>
+                </div>
+                <div class="product-items-container">
+                    <div class="product-items-container-content">
+                        <div class="product-items">
+                            <div class="product-item">
+                                <a href=""><img src="img/product1.jpg" alt=""></a>
+                                <li>0% lãi xuất</li>
+                                <a href="">
+                                    <li class="name">iPhone 13 Pro Max 128GB – NEW</li>
+                                </a>
+                                <li class="price">30.989000 </li>
+                                <li><button class="cart-shopping"><i class="fa fa-shopping-cart"></i> Thêm vào giỏ hàng</button></li>
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <span class="xe"></span>
+                            </div>
+                            <div class="product-item">
+                                <a href=""><img src="img/product2.jpg" alt=""></a>
+                                <li>0% lãi xuất</li>
+                                <a href="">
+                                    <li class="name">iPhone 13 Pro Max 128GB – NEW</li>
+                                </a>
+                                <li class="price">26.989000</li>
+                                <li><button class="cart-shopping"><i class="fa fa-shopping-cart"></i> Thêm vào giỏ hàng</button></li>
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <span class="xe"></span>
+                            </div>
+                            <div class="product-item">
+                                <a href=""><img src="img/product3.jpg" alt=""></a>
+                                <li>0% lãi xuất</li>
+                                <a href="">
+                                    <li class="name">iPhone 13 Pro Max 128GB – NEW</li>
+                                </a>
+                                <li class="price">30.989.000 <sup>đ</sup></li>
+                                <li><button class="cart-shopping"><i class="fa fa-shopping-cart"></i> Thêm vào giỏ hàng</button></li>
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <span class="xe"></span>
+                            </div>
+                            <div class="product-item">
+                                <a href=""><img src="img/product2.jpg" alt=""></a>
+                                <li>0% lãi xuất</li>
+                                <a href="">
+                                    <li class="name">iPhone 13 Pro Max 128GB – NEW</li>
+                                </a>
+                                <li class="price">30.989000 <sup>đ</sup></li>
+                                <li><button class="cart-shopping"><i class="fa fa-shopping-cart"></i> Thêm vào giỏ hàng</button></li>
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <span class="xe"></span>
+                            </div>
+                            <div class="product-item">
+                                <a href=""><img src="img/product1.jpg" alt=""></a>
+                                <li>0% lãi xuất</li>
+                                <a href="">
+                                    <li class="name">iPhone 13 Pro Max 128GB – NEW</li>
+                                </a>
+                                <li class="price">30.989.000 <sup>đ</sup></li>
+                                <li><button class="cart-shopping"><i class="fa fa-shopping-cart"></i> Thêm vào giỏ hàng</button></li>
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <span class="xe"></span>
+                            </div>
+                        </div>
+                        <div class="product-items">
+                            <div class="product-item">
+                                <a href=""><img src="img/product3.jpg" alt=""></a>
+                                <li>0% lãi xuất</li>
+                                <a href="">
+                                    <li class="name">iPhone 13 Pro Max 128GB – NEW</li>
+                                </a>
+                                <li class="price">30.989.000 <sup>đ</sup></li>
+                                <li><button class="cart-shopping"><i class="fa fa-shopping-cart"></i> Thêm vào giỏ hàng</button></li>
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <span class="xe"></span>
+                            </div>
+                            <div class="product-item">
+                                <a href=""><img src="img/product2.jpg" alt=""></a>
+                                <li>0% lãi xuất</li>
+                                <a href="">
+                                    <li class="name">iPhone 13 Pro Max 128GB – NEW</li>
+                                </a>
+                                <li class="price">30.989.000 <sup>đ</sup></li>
+                                <li><button class="cart-shopping"><i class="fa fa-shopping-cart"></i> Thêm vào giỏ hàng</button></li>
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <span class="xe"></span>
+                            </div>
+                            <div class="product-item">
+                                <a href=""><img src="img/product3.jpg" alt=""></a>
+                                <li>0% lãi xuất</li>
+                                <a href="">
+                                    <li class="name">iPhone 13 Pro Max 128GB – NEW</li>
+                                </a>
+                                <li class="price">30.989.000 <sup>đ</sup></li>
+                                <li><button class="cart-shopping"><i class="fa fa-shopping-cart"></i> Thêm vào giỏ hàng</button></li>
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <span class="xe"></span>
+                            </div>
+                            <div class="product-item">
+                                <a href=""><img src="img/product2.jpg" alt=""></a>
+                                <li>0% lãi xuất</li>
+                                <a href="">
+                                    <li class="name">iPhone 13 Pro Max 128GB – NEW</li>
+                                </a>
+                                <li class="price">30.989.000 <sup>đ</sup></li>
+                                <li><button class="cart-shopping"><i class="fa fa-shopping-cart"></i> Thêm vào giỏ hàng</button></li>
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <span class="xe"></span>
+                            </div>
+                            <div class="product-item">
+                                <a href=""><img src="img/product1.jpg" alt=""></a>
+                                <li>0% lãi xuất</li>
+                                <a href="">
+                                    <li class="name">iPhone 13 Pro Max 128GB – NEW</li>
+                                </a>
+                                <li class="price">30.989.000 <sup>đ</sup></li>
+                                <li><button class="cart-shopping"><i class="fa fa-shopping-cart"></i> Thêm vào giỏ hàng</button></li>
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <span class="xe"></span>
+                            </div>
+                        </div>
+                        <div class="product-items">
+                            <div class="product-item">
+                                <a href=""><img src="img/product1.jpg" alt=""></a>
+                                <li>0% lãi xuất</li>
+                                <a href="">
+                                    <li class="name">iPhone 13 Pro Max 128GB – NEW</li>
+                                </a>
+                                <li class="price">30.989.000 <sup>đ</sup></li>
+                                <li><button class="cart-shopping"><i class="fa fa-shopping-cart"></i> Thêm vào giỏ hàng</button></li>
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <span class="xe"></span>
+                            </div>
+                            <div class="product-item">
+                                <a href=""><img src="img/product3.jpg" alt=""></a>
+                                <li>0% lãi xuất</li>
+                                <a href="">
+                                    <li class="name">iPhone 13 Pro Max 128GB – NEW</li>
+                                </a>
+                                <li class="price">30.989.000 <sup>đ</sup></li>
+                                <li><button class="cart-shopping"><i class="fa fa-shopping-cart"></i> Thêm vào giỏ hàng</button></li>
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <span class="xe"></span>
+                            </div>
+                            <div class="product-item">
+                                <a href=""><img src="img/product1.jpg" alt=""></a>
+                                <li>0% lãi xuất</li>
+                                <a href="">
+                                    <li class="name">iPhone 13 Pro Max 128GB – NEW</li>
+                                </a>
+                                <li class="price">30.989.000 <sup>đ</sup></li>
+                                <li><button class="cart-shopping"><i class="fa fa-shopping-cart"></i> Thêm vào giỏ hàng</button></li>
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <span class="xe"></span>
+                            </div>
+                            <div class="product-item">
+                                <a href=""><img src="img/product2.jpg" alt=""></a>
+                                <li>0% lãi xuất</li>
+                                <a href="">
+                                    <li class="name">iPhone 13 Pro Max 128GB – NEW</li>
+                                </a>
+                                <li class="price">30.989.000 <sup>đ</sup></li>
+                                <li><button class="cart-shopping"><i class="fa fa-shopping-cart"></i> Thêm vào giỏ hàng</button></li>
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <span class="xe"></span>
+                            </div>
+                            <div class="product-item">
+                                <a href=""><img src="img/product3.jpg" alt=""></a>
+                                <li>0% lãi xuất</li>
+                                <a href="">
+                                    <li class="name">iPhone 13 Pro Max 128GB – NEW</li>
+                                </a>
+                                <li class="price">30.989.000 <sup>đ</sup></li>
+                                <li><button class="cart-shopping"><i class="fa fa-shopping-cart"></i> Thêm vào giỏ hàng</button></li>
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <span class="xe"></span>
+                            </div>
+                        </div>
+                        <div class="product-items">
+                            <div class="product-item">
+                                <a href=""><img src="img/product1.jpg" alt=""></a>
+                                <li>0% lãi xuất</li>
+                                <a href="">
+                                    <li class="name">iPhone 13 Pro Max 128GB – NEW</li>
+                                </a>
+                                <li class="price">30.989.000 <sup>đ</sup></li>
+                                <li><button class="cart-shopping"><i class="fa fa-shopping-cart"></i> Thêm vào giỏ hàng</button></li>
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <span class="xe"></span>
+                            </div>
+                            <div class="product-item">
+                                <a href=""><img src="img/product3.jpg" alt=""></a>
+                                <li>0% lãi xuất</li>
+                                <a href="">
+                                    <li class="name">iPhone 13 Pro Max 128GB – NEW</li>
+                                </a>
+                                <li class="price">30.989.000 <sup>đ</sup></li>
+                                <li><button class="cart-shopping"><i class="fa fa-shopping-cart"></i> Thêm vào giỏ hàng</button></li>
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <span class="xe"></span>
+                            </div>
+                            <div class="product-item">
+                                <a href=""><img src="img/product2.jpg" alt=""></a>
+                                <li>0% lãi xuất</li>
+                                <a href="">
+                                    <li>class="name">iPhone 13 Pro Max 128GB – NEW</li>
+                                </a>
+                                <li class="price">30.989.000 <sup>đ</sup></li>
+                                <li><button class="cart-shopping"><i class="fa fa-shopping-cart"></i> Thêm vào giỏ hàng</button></li>
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <span class="xe"></span>
+                            </div>
+                            <div class="product-item">
+                                <a href=""><img src="img/product1.jpg" alt=""></a>
+                                <li>0% lãi xuất</li>
+                                <a href="">
+                                    <li>iPhone 13 Pro Max 128GB – NEW</li>
+                                </a>
+                                <li class="price">30.989.000 <sup>đ</sup></li>
+                                <li><button class="cart-shopping"><i class="fa fa-shopping-cart"></i> Thêm vào giỏ hàng</button></li>
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <span class="xe"></span>
+                            </div>
+                            <div class="product-item">
+                                <a href=""><img src="img/product2.jpg" alt=""></a>
+                                <li>0% lãi xuất</li>
+                                <a href="">
+                                    <li class="name">iPhone 13 Pro Max 128GB – NEW</li>
+                                </a>
+                                <li class="price">30.989.000 <sup>đ</sup></li>
+                                <li><button class="cart-shopping"><i class="fa fa-shopping-cart"></i> Thêm vào giỏ hàng</button></li>
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <span class="xe"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Slider-btn">
+                        <i class="fas fa-angle-left fa-angle-left-product"></i>
+                        <i class="fas fa-angle-right fa-angle-right-product"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Product -->
+
+    <!-- Start Banner 2 -->
+    <section>
+        <div class="grid wide">
+            <div class="banner-two">
+                <div class="col banner-two l-4">
+                    <img src="img/banner4.png" alt="">
+                </div>
+                <div class="col banner-two l-4">
+                    <img src="img/banner5.jpg" alt="">
+                </div>
+                <div class="col banner-two l-4">
+                    <img src="img/banner6.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Banner 2 -->
+
+    <!-- Start Product 2 -->
+    <section>
+        <div class="grid wide">
+            <div class="row">
+                <div class="product-watch-top">
+                    <h2>APPLE WATCH</h2>
+                    <ul>
+                        <a href="">
+                            <li>Apple Watch S3</li>
+                        </a>
+                        <a href="">
+                            <li>Apple Watch S4</li>
+                        </a>
+                        <a href="">
+                            <li>Apple Watch S5</li>
+                        </a>
+                        <a href="">
+                            <li>Apple Watch SE</li>
+                        </a>
+                        <a href="">
+                            <li>Xem tất cả</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+            <div class="product-c">
+                <div class="col l-3">
+                    <a href=""><img src="img/apple-watch3.jpg" alt=""></a>
+                    <li>Trả góp 0%</li>
+                    <a href="">
+                        <li class="name">Apple Watch SE 40mm</li>
+                    </a>
+                    <li class="price">6.990000 <sup>đ</sup></li>
+                    <li><button class="cart-shopping"><i class="fa fa-shopping-cart"></i> Thêm vào giỏ hàng</button></li>
+                    <li>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </li>
+                    <span class="xe1"></span>
+                </div>
+                <div class="col l-3">
+                    <a href=""><img src="img/apple-watch3.jpg" alt=""></a>
+                    <li>Trả góp 0%</li>
+                    <a href="">
+                        <li class="name">Apple Watch SE 40mm</li>
+                    </a>
+                    <li class="price">6.990.000 <sup>đ</sup></li>
+                    <li><button class="cart-shopping"><i class="fa fa-shopping-cart"></i> Thêm vào giỏ hàng</button></li>
+                    <li>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </li>
+                    <span class="xe1"></span>
+                </div>
+                <div class="col l-3">
+                    <a href=""><img src="img/apple-watch2.jpg" alt=""></a>
+                    <li>Trả góp 0%</li>
+                    <a href="">
+                        <li class="name">Apple Watch SE 40mm</li>
+                    </a>
+                    <li class="price">6.990.000 <sup>đ</sup></li>
+                    <li><button class="cart-shopping"><i class="fa fa-shopping-cart"></i> Thêm vào giỏ hàng</button></li>
+                    <li>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </li>
+                    <span class="xe1"></span>
+                </div>
+                <div class="col l-3">
+                    <a href=""><img src="img/apple-watch.jpg" alt=""></a>
+                    <li>Trả góp 0%</li>
+                    <a href="">
+                        <li class="name">Apple Watch SE 40mm</li>
+                    </a>
+                    <li class="price">6.990.000 <sup>đ</sup></li>
+                    <li><button class="cart-shopping"><i class="fa fa-shopping-cart"></i> Thêm vào giỏ hàng</button></li>
+                    <li>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </li>
+                    <span class="xe1"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Product 2 -->
+
+    <!-- Start Phụ Kiện -->
+    <section>
+        <div class="grid wide">
+            <div class="product-slider-top">
+                <h2>PHỤ KIỆN GIÁ RẺ</h2>
+                <ul>
+                    <a href="">
+                        <li>Pin sạc dự phòng</li>
+                    </a>
+                    <a href="">
+                        <li>Cáp sạc</li>
+                    </a>
+                    <a href="">
+                        <li>Tai nghe</li>
+                    </a>
+                    <a href="">
+                        <li>Loa</li>
+                    </a>
+                    <a href="">
+                        <li>Thẻ nhớ</li>
+                    </a>
+                    <a href="">
+                        <li>Phụ kiện chính hãng</li>
+                    </a>
+                    <a href="">
+                        <li>Ốp lưng điện thoại</li>
+                    </a>
+                    <a href="">
+                        <li>Xem tất cả</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="slider-container-content">
+                <div class="slider-container-left">
+                    <!-- <a href=""><img src="img/bannerSilder.png" alt=""></a> -->
+                    <a href=""><img src="img/bannerSlider1.png" alt=""></a>
+                </div>
+                <div class="container-right">
+                    <a href=""><img src="img/banner-Right.png" alt=""></a>
+                    <a href=""><img src="img/banner-Right1.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Phụ Kiện -->
+
+    <!-- Start Footer -->
+    <footer>
+        <div class="grid wide">
+            <div style="margin: 0;" class="row">
+                <div class="col l-4 footer">
+                    <ul>
+                        <li><a href="">Lịch sử mua hàng</a></li>
+                        <li><a href="">Tìm hiểu về mua trả góp</a></li>
+                        <li><a href="">Chính sách bảo hành</a></li>
+                        <li><a href="">Chính sách đổi trả</a></li>
+                        <li><a href="">Giao hàng & thanh toán</a></li>
+                        <li><a href="">Chính sách ship COD</a></li>
+                        <li><a href="">Chính sách bảo mật thông tin</a></li>
+                    </ul>
+                </div>
+                <div class="col l-4 footer">
+                    <ul>
+                        <li><a href="">Giới thiệu công ty</a></li>
+                        <li><a href="">Tin công nghệ</a></li>
+                        <li><a href="">Tuyển dụng</a></li>
+                        <li><a href="">Gửi góp ý, khiếu nại</a></li>
+                        <li><a href="">Bệnh viện điện thoại quảng nam</a></li>
+                    </ul>
+                </div>
+                <div class="col l-4 footer">
+                    <ul>
+                        <li>Gọi mua hàng <a href=""><b>0966.923.416</b></a></li>
+                        <li>Gọi bảo hành <a href=""><b>0966.923.416</b></a></li>
+                        <li>Kỹ thuật <a href=""><b>0966.923.416</b></a></li>
+                    </ul>
+                </div>
+                <div class="footer-title">
+                    <p>© 2021 Rum Apple. Điện thoại: 0966.923.416. Email: cskh@rumapple.vn. Chịu trách nhiệm nội dung:
+                        Huỳnh Văn Phòng.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    <script src="Script.js"></script>
+    
+</body>
+
+</html>
